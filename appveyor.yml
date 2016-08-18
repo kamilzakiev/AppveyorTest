@@ -32,6 +32,7 @@ test_script:
 on_finish :
 
 matrix:
+  fast_finish: true
 
 cache:
   - C:\Users\appveyor\AppData\Roaming\npm\node_modules -> package.json  # global npm modules
