@@ -1,4 +1,4 @@
 var myTest = require("./tests/myTest");
-var browsers = ['internet explorer', 'chrome'];
+var browsers = ['firefox'];
 
 myTest(browsers);
