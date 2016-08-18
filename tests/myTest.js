@@ -1,10 +1,16 @@
+var webdriver = require('selenium-webdriver'),
+    Capabilities = require('selenium-webdriver/lib/capabilities').Capabilities,
+    until = webdriver.until;
+
+var capabilities = Capabilities.firefox();
+
 function runTest(browsers) {
-    var webdriver = require('selenium-webdriver'),
-        until = webdriver.until;
+    capabilities.set('marionette', true);
         
     browsers.forEach(function(browser) {      
         var driver = new webdriver.Builder()
-            .forBrowser(browser) 
+            //.forBrowser(browser)
+            .withCapabilities(capabilities)
             .build();
 
         driver.get('http://www.google.com/ncr');
