@@ -9,5 +9,7 @@ var driver = new webdriver.Builder()
 driver.get('http://www.google.com/ncr');
 driver.findElement(By.name('q')).sendKeys('webdriver');
 driver.findElement(By.name('btnG')).click();
+console.log('Waiting for test...');
 driver.wait(until.titleIs('webdriver - Google Search'), 10000);
+console.log('Test is done');
 driver.quit();
