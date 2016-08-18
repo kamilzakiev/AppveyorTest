@@ -26,7 +26,7 @@ test_script:
   # Output useful info for debugging.
   - node --version && npm --version
   
-  - node myTest.js
+  - node runner.js
 
 # scripts to run after tests
 on_finish :
