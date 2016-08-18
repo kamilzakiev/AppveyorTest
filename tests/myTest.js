@@ -4,7 +4,7 @@ function runTest() {
         until = webdriver.until;
 
     var driver = new webdriver.Builder()
-        .forBrowser('internet explorer')
+        .forBrowser('chrome')
         .build();
 
     driver.get('http://www.google.com/ncr');
