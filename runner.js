@@ -1,4 +1,6 @@
 var myTest = require("./tests/myTest");
-var browsers = ['firefox'];
+//var browsers = ['internet explorer', 'chrome', 'firefox'];
+
+var browsers = ['MicrosoftEdge'];
 
 myTest(browsers);
