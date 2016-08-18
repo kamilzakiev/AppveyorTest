@@ -3,7 +3,7 @@ var webdriver = require('selenium-webdriver'),
     until = webdriver.until;
 
 var driver = new webdriver.Builder()
-    .forBrowser('chrome')
+    .forBrowser('firefox')
     .build();
 
 driver.get('http://www.google.com/ncr');
