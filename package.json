@@ -4,7 +4,7 @@
   "description": "Selenium test",
   "main": "index.js",
   "scripts": {
-    "test": "myTest.js"
+    "test": "runner.js"
   },
   "author": "Kamil Zakiev",
   "license": "MIT",
