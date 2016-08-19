@@ -1,6 +1,8 @@
 var myTest = require("./tests/myTest");
-//var browsers = ['internet explorer', 'chrome', 'firefox', 'MicrosoftEdge', 'opera'];
+var browsers = ['internet explorer', 'chrome', 'firefox', 'MicrosoftEdge', 'opera'];
 
-var browsers = ['firefox'];
+browsers.forEach(function(browser) {    
+    myTest(browser);
+});
 
-myTest(browsers);
+
