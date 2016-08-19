@@ -2,10 +2,6 @@
   "name": "SeleniumTest",
   "version": "1.0.0",
   "description": "Selenium test",
-  "main": "index.js",
-  "scripts": {
-    "test": "runner.js"
-  },
   "author": "Kamil Zakiev",
   "license": "MIT",
   "dependencies": {
