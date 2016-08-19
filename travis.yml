@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+ - "5.5.0"
+
+install:
+  # installing local npm packages
+  - npm install
+
+build: off
+
+test_script:
+  # Output useful info for debugging.
+  - node --version && npm --version
+  
+  - node runner.js
+
+# scripts to run after tests
+on_finish :
+
+matrix:
+  fast_finish: true
+
+cache:
+  directories:
+    - node_modules
